@@ -11,14 +11,23 @@
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__avatar/profile__avatar.css);
 @import url(../blocks/profile/__info/profile__info.css);
-@import url(../blocks/profile/__heading/profile__heading.css);
 @import url(../blocks/profile/__text/profile__text.css);
+@import url(../blocks/profile/__heading/profile__heading.css);
+@import url(../blocks/profile/__description/profile__description.css);
 @import url(../blocks/profile/__edit-buttom/profile__edit-buttom.css);
 @import url(../blocks/profile/__add-button/profile__add-button.css);
 
+
 /** elements **/
 
-@import url(../blocks/elemets/elemets.css);
-@import url(../blocks/elemet/elemet.css);
+@import url(../blocks/elemets/elements.css);
+@import url(../blocks/elemet/element.css);
+@import url(../blocks/elemet/__image/element__image.css);
+@import url(../blocks/elemet/__heading/element__heading.css);
+@import url(../blocks/elemet/__text/element__text.css);
+@import url(../blocks/elemet/__like/element__like.css);
+
+/** footer **/
 
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__text/footer__text.css);
