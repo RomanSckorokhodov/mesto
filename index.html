@@ -29,7 +29,6 @@
       </section>
       
       <section class="elements">
-
         <div class="element">
           <img src="./image/image_1.jpg" alt="Картинка 1" class="element__image">
           <div class="element__text">
@@ -78,8 +77,17 @@
     <footer class="footer">
       <p class="footer__text">©2020 Mesto Russia</p>
     </footer>
-
+    <section class="popup">
+      <div class="popup__close"></div>
+      <form class="popup__editor">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <input type="text" name="name" class="popup__name" placeholder="Жак-Ив Кусто">
+        <input type="text" name="job" class="popup__name" placeholder="Исследователь океана">
+      <button class="popup__button">Сохранить</button>
+    </form>
+    </section>
   </div>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
