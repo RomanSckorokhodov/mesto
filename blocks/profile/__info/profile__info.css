@@ -2,3 +2,11 @@
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width: 886px){
+    .profile__info{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+}

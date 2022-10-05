@@ -4,5 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
+@media screen and (max-width: 886px) {
+    .profile{
+        max-width: 320px;
+        flex-direction: column;
+        margin-bottom: 36px;
+    }
 }

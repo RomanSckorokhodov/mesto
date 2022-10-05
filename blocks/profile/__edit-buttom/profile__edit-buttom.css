@@ -3,9 +3,22 @@
     width: 24px;
     height: 24px;
     background: url(../../../image/edit.png) center no-repeat;
+    position: absolute;
+    right: -24px;
+    top: 14px;
 }
 
 
 .profile__edit-button:hover {
     opacity: 0.6;
 }
+
+  
+@media screen and (max-width: 886px) {
+    .profile__edit-button {
+      background-size: 7.5px;
+      width: 18px;
+      height: 18px;
+      right: -19px;
+    }
+  }

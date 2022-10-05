@@ -7,6 +7,8 @@
     row-gap: 20px;
 }
 
-@media screen {
-    
+@media screen and (max-width: 886px){
+        .elements{
+        max-width: 282px;
+    }
 }

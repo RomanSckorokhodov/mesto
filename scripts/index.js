@@ -20,8 +20,8 @@ function formSubmitHandler (evt) {
     jobInput.placeholder = 'Ваша должность';
 }
 
-popupOpenButton.addEventListener('click', popupToggle); 
 popupCloseButton.addEventListener('click', popupToggle); 
+popupOpenButton.addEventListener('click', popupToggle); 
 popupSaveButton.addEventListener('click', popupToggle); 
 
 formElement.addEventListener('submit', formSubmitHandler); 
