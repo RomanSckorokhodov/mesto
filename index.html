@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href="pages/index.css" />
   <title>Место - Яндекс.Практикум</title>
-  <meta name="description" content="Место  - практическая работа №4" />
+  <meta name="description" content="Место - практическая работа №4" />
 </head>
 
 <body class="root">
@@ -67,7 +67,7 @@
         <div class="element">
           <img src="./image/image_3.jpg" alt="Картинка 1" class="elemet__image">
           <div class="element__text">
-            <h2 class="element__heading">Карачаево-Ч...</h2>
+            <h2 class="element__heading">Карачаево-Черкессия</h2>
             <img src="./image/like.png" class="element__like" alt="Like">
           </div>
         </div>
@@ -77,14 +77,17 @@
     <footer class="footer">
       <p class="footer__text">©2020 Mesto Russia</p>
     </footer>
-    <section class="popup">
-      <div class="popup__close"></div>
-      <form class="popup__editor">
-        <h3 class="popup__title">Редактировать профиль</h3>
-        <input type="text" name="name" class="popup__name" placeholder="Жак-Ив Кусто">
-        <input type="text" name="job" class="popup__name" placeholder="Исследователь океана">
-      <button class="popup__button">Сохранить</button>
-    </form>
+    <section class="popup popup_opened">
+      <div class="popup__form">
+        <div class="popup__close"></div>
+          <form class="popup__editor">
+              <h3 class="popup__title">Редактировать профиль</h3>
+
+              <input type="text" class="popup__text popup__text_name" placeholder="Ваше Имя" value="">
+              <input type="text" class="popup__text popup__text_job" placeholder="Ваша должность"  value="">
+            <button class="popup__button" type="submit">Сохранить</button>
+          </form>
+      </div>
     </section>
   </div>
   <script src="./scripts/index.js"></script>
