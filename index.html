@@ -12,7 +12,7 @@
 <body class="root">
   <div class="page">
     <header class="header">
-      <img src="./image/logo.png" alt="Лого Место" >
+      <img src="./image/logo.png" alt="Лого Место" class="header__logo">
     </header>
     <main class="content">
 
@@ -21,11 +21,11 @@
           <img src="./image/image.jpg" class="profile__avatar" alt="Фото Жак-Ива Кусто">
           <div class="profile__text">
             <h1 class="profile__heading">Жак-Ив Кусто</h1>
+            <button class="profile__edit-button" type="button"></button>
             <p class="profile__description">Исследователь океана</p>
-            <div class="profile__edit-button"></div>
           </div>
         </div>
-        <div class="profile__add-button"></div>
+        <button class="profile__add-button" type="button"></button>
       </section>
       
       <section class="elements">
@@ -77,12 +77,11 @@
     <footer class="footer">
       <p class="footer__text">©2020 Mesto Russia</p>
     </footer>
-    <section class="popup popup_opened">
+    <section class="popup ">
       <div class="popup__form">
-        <div class="popup__close"></div>
+        <button class="popup__close" type="button"></button>
           <form class="popup__editor">
               <h3 class="popup__title">Редактировать профиль</h3>
-
               <input type="text" class="popup__text popup__text_name" placeholder="Ваше Имя" value="">
               <input type="text" class="popup__text popup__text_job" placeholder="Ваша должность"  value="">
             <button class="popup__button" type="submit">Сохранить</button>
