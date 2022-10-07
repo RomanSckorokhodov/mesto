@@ -1,4 +1,4 @@
-.profile{
+.profile {
     max-width: 880px;
     margin: 40px auto;
     display: flex;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 886px) {
-    .profile{
+    .profile {
         max-width: 320px;
         flex-direction: column;
         margin-bottom: 36px;

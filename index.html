@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="Ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,88 +7,83 @@
   <title>Место - Яндекс.Практикум</title>
   <meta name="description" content="Место - практическая работа №4" />
 </head>
-
 <body class="root">
   <div class="page">
     <header class="header">
-      <img src="./image/logo.png" alt="Лого Место" class="header__logo">
+      <img src="./image/logo.svg" alt="Лого Место" class="header__logo">
     </header>
     <main class="content">
-
       <section class="profile">
         <div class="profile__info">
           <img src="./image/image.jpg" class="profile__avatar" alt="Фото Жак-Ива Кусто">
           <div class="profile__text">
             <h1 class="profile__heading">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button" type="button"></button>
+            <button class="profile__edit-button" type="button" aria-label="Edit Profile"></button>
             <p class="profile__description">Исследователь океана</p>
           </div>
         </div>
-        <button class="profile__add-button" type="button"></button>
+        <button class="profile__add-button" type="button" aria-label="Add"></button>
       </section>
-      
       <section class="elements">
         <div class="element">
           <img src="./image/image_1.jpg" alt="Фото Карачаевск" class="element__image">
           <div class="element__text">
             <h2 class="element__heading">Карачаевск</h2>
-            <img src="./image/like.png" class="element__like" alt="Лайк">
+            <button class="element__like" type="button"></button>
           </div>
         </div>
         <div class="element">
           <img src="./image/image_2.jpg" alt="Фото горы Эльбрус" class="element__image">
           <div class="element__text">
             <h2 class="element__heading">Гора Эльбрус</h2>
-            <img src="./image/like.png" class="element__like" alt="Лайк">
+            <button class="element__like" type="button"></button>
           </div>
         </div>
         <div class="element">
           <img src="./image/image_3.jpg" alt="Фото Домбай" class="element__image">
           <div class="element__text">
             <h2 class="element__heading">Домбай</h2>
-            <img src="./image/like.png" class="element__like" alt="Лайк">
+            <button class="element__like" type="button"></button>
           </div>
         </div>
         <div class="element">
           <img src="./image/image_1.jpg" alt="Фото горы Эльбрус" class="element__image">
           <div class="element__text">
             <h2 class="element__heading">Гора Эльбрус</h2>
-            <img src="./image/like.png" class="element__like" alt="Лайк">
+            <button class="element__like" type="button"></button>
           </div>
         </div>
         <div class="element">
           <img src="./image/image_2.jpg" alt="Фото Домбай" class="element__image">
           <div class="element__text">
             <h2 class="element__heading">Домбай</h2>
-            <img src="./image/like.png" class="element__like" alt="Лайк">
+            <button class="element__like" type="button"></button>
           </div>
         </div>
         <div class="element">
           <img src="./image/image_3.jpg" alt="Фото Карачаево-Черкессии" class="element__image">
           <div class="element__text">
             <h2 class="element__heading">Карачаево-Черкессия</h2>
-            <img src="./image/like.png" class="element__like" alt="Лайк">
+            <button class="element__like" type="button"></button>
           </div>
         </div>
       </section>
-
     </main>
     <footer class="footer">
       <p class="footer__text">©2020 Mesto Russia</p>
     </footer>
-    <section class="popup ">
+    <div class="popup ">
       <div class="popup__form">
-        <button class="popup__close" type="button"></button>
-          <form class="popup__editor">
-              <h3 class="popup__title">Редактировать профиль</h3>
-              <input type="text" class="popup__text popup__text_name" placeholder="Ваше Имя" value="">
-              <input type="text" class="popup__text popup__text_job" placeholder="Ваша должность"  value="">
-            <button class="popup__button" type="submit">Сохранить</button>
-          </form>
+        <button class="popup__close" type="button" aria-label="Close"></button>
+        <form class="popup__editor">
+          <h3 class="popup__title">Редактировать профиль</h3>
+          <input type="text" class="popup__input popup__input_text_name" placeholder="Ваше Имя" value="">
+          <input type="text" class="popup__input popup__input_text_job" placeholder="Ваша должность" value="">
+          <button class="popup__button" type="submit" aria-label="Save">Сохранить</button>
+        </form>
       </div>
-    </section>
+    </div>
   </div>
   <script src="./scripts/index.js"></script>
 </body>
-
 </html>

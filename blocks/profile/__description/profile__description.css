@@ -1,6 +1,6 @@
-.profile__description{
+.profile__description {
     color: #FFF;
-    font-family: 'Inter';
+    font-family: 'Inter', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -11,9 +11,9 @@
 
 
 @media screen and (max-width: 886px) {
-    .profile__description{
-            font-size: 14px;
-            line-height: 17px;
-            text-align: center;
+    .profile__description {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
     }
 }
