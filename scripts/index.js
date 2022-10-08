@@ -9,9 +9,6 @@ let jobInput = document.querySelector('.popup__input_text_job');
 let nameTitle = document.querySelector('.profile__heading');
 let nameDescription = document.querySelector('.profile__description');
 
-nameTitle.textContent = 'Жак-Ив Кусто';
-nameDescription.textContent = 'Исследователь дна';
-
 function popupOpen() {
     popup.classList.add('popup_opened');
     nameInput.value = nameTitle.textContent;
@@ -26,6 +23,7 @@ function formSubmitHandler(evt) {
     evt.preventDefault();
     nameTitle.textContent = nameInput.value;
     nameDescription.textContent = jobInput.value;
+    popupClose()
 };
 
 popupCloseButton.addEventListener('click', popupClose);

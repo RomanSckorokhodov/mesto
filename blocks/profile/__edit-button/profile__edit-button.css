@@ -2,7 +2,7 @@
   border: 1px solid #FFFFFF;
   width: 24px;
   height: 24px;
-  background: url(../../../image/edit.png) center no-repeat;
+  background: url(../../../image/edit.svg) center no-repeat;
   display: flex;
   flex-direction: column;
   align-self: center;
