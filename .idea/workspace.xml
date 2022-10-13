@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9ae0c894-db02-455b-a6f1-f3ec20a42b5f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/blocks/elemet/__heading/element__heading.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elemet/__heading/element__heading.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elemet/__like/element__like.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elemet/__like/element__like.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/elemet/element.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elemet/element.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__button/popup__button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button/popup__button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__close/popup__close.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__close/popup__close.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__job/popup__job.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__name/popup__name.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/element/__image/element__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__image/element__image.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/element/element.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/element.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/elements/elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/elements/elements.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
@@ -36,6 +36,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -48,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664872795911</updated>
       <workItem from="1664872799968" duration="103000" />
+      <workItem from="1665679740080" duration="674000" />
     </task>
     <servers />
   </component>

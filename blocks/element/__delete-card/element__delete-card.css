@@ -1,0 +1,12 @@
+.element__delete-card {
+    background-image: url(../../../image/trash.svg);
+    background-color: rgba(0, 0, 0, .0);
+    background-repeat: no-repeat;
+    position: absolute;
+    border: none;
+    width: 18px;
+    height: 19px;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
