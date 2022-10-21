@@ -6,6 +6,7 @@
     background-position: center;
     background-color: rgba(0, 0, 0, .0);
     border: 0;
+    background-size: contain;
 }
 
 .element__like:hover {

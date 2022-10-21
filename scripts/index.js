@@ -1,7 +1,9 @@
 const popupOpenButton = document.querySelector('.profile__edit-button');
 const popupOpeAddButton = document.querySelector('.profile__add-button');
+
 const popupAdd = document.querySelector('.popup_add');
 const popup = document.querySelector('.popup');
+
 const popupCloseButton = popup.querySelector('.popup__close');
 const popupCloseButtonAdd = popupAdd.querySelector('.popup__close');
 const popupSaveButton = document.querySelector('.popup__button');
