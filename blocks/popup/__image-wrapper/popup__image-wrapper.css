@@ -1,3 +1,7 @@
-.popup__image-wrapper{
-
+.popup__image-wrapper {
+    max-width: 75vh;
+    max-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
