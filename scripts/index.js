@@ -6,7 +6,7 @@ const popupImage = document.querySelector(".popup_image");
 const buttonCloseEditPopup = popupProfile.querySelector(".popup__close");
 const buttonCloseAddCardPopup = popupAddCard.querySelector(".popup__close");
 const buttonCloseImagePopup = popupImage.querySelector(".popup__close");
-const formProfile = popupProfile.querySelector(".popup__editor");
+const formProfile = popupProfile.querySelector(".popup__editor_profile");
 const nameInput = document.querySelector(".popup__input_text_name");
 const jobInput = document.querySelector(".popup__input_text_job");
 const nameTitle = document.querySelector(".profile__heading");
@@ -18,6 +18,8 @@ const inputTitle = document.querySelector(".popup__input_form-title");
 const inputLink = document.querySelector(".popup__input_form-link");
 const popupImageName = document.querySelector(".popup__image-description");
 const popupImageLink = document.querySelector(".popup__image-link");
+
+const Allpopup = document.querySelectorAll(".popup");
 
 const render = () => {
   initialCards.forEach((item) => {
@@ -93,6 +95,29 @@ function formAddProfile(evt) {
   closePopup(popupProfile);
 }
 
+function closePopupOverlay(popupElements) {
+  popupElements.forEach((popup) => {
+    popup.addEventListener("mousedown", (evt) => {
+      if (evt.target.classList.contains("popup_opened")) {
+        closePopup(popup);
+      }
+      if (evt.target.classList.contains("popup__close")) {
+        closePopup(popup);
+      }
+    });
+  });
+}
+
+function keyClosePopup(evt) {
+  if (evt.key === "Escape") {
+    closePopup(popupProfile);
+    closePopup(popupImage);
+    closePopup(popupAddCard);
+  }
+}
+
+closePopupOverlay(Allpopup);
+
 buttonCloseEditPopup.addEventListener("click", () => closePopup(popupProfile));
 buttonCloseAddCardPopup.addEventListener("click", () =>
   closePopup(popupAddCard)
@@ -106,3 +131,5 @@ formProfile.addEventListener("submit", formAddProfile);
 formAddCard.addEventListener("submit", (e) => {
   addCard(e);
 });
+
+document.addEventListener("keydown", keyClosePopup);
