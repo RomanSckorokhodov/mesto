@@ -34,7 +34,7 @@ const addCard = (e) => {
   container.prepend(item);
   closePopup(popupAddCard);
   formAddCard.reset();
-  resetForm(popupAddCard, buttonSubmitAddCard, settings)
+  resetForm(popupAddCard, buttonSubmitAddCard, objSettings)
 };
 
 
@@ -128,5 +128,3 @@ buttonOpenAddCardPopup.addEventListener("click", () => openPopup(popupAddCard));
 
 formProfile.addEventListener("submit", formAddProfile);
 formAddCard.addEventListener("submit", addCard);
-
-document.addEventListener("keydown", closePopupByEsc);
