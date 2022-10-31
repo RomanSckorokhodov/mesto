@@ -21,7 +21,7 @@ const popupImageLink = document.querySelector(".popup__image-link");
 const buttonSubmitAddCard = popupAddCard.querySelector(".popup__button_add-card");
 const allPopups = document.querySelectorAll(".popup");
 
-const renderCards = () => {
+const renderInitialCards = () => {
   initialCards.forEach((item) => {
     const card = createCardNode(item.name, item.link);
     container.append(card);
@@ -78,7 +78,7 @@ const likeCard = (e) => {
   e.target.classList.toggle("element__like_active");
 };
 
-renderCards();
+renderInitialCards();
 
 /**Открытие всех Поп-апов */
 function openPopup(popup) {
@@ -91,13 +91,13 @@ function closePopup(popup) {
   document.removeEventListener('keydown', closePopupByEsc);
 }
 
-function popupProfileOpen() {
+function openPopupProfile() {
   nameInput.value = nameTitle.textContent;
   jobInput.value = nameDescription.textContent;
   openPopup(popupProfile);
 }
 
-function formAddProfile(evt) {
+function submitFormAddProfile(evt) {
   evt.preventDefault();
   nameTitle.textContent = nameInput.value;
   nameDescription.textContent = jobInput.value;
@@ -116,8 +116,8 @@ function initOverlayClose (popupElements) {
 
 function closePopupByEsc(evt) {
   if (evt.key === "Escape") {
-    const openPopups = document.querySelector('.popup_opened');
-    closePopup(openPopups);
+    const openPopup = document.querySelector('.popup_opened');
+    closePopup(openPopup);
   }
 }
 
@@ -126,5 +126,5 @@ initOverlayClose(allPopups);
 buttonOpenEditPopup.addEventListener("click", () => openPopup(popupProfile));
 buttonOpenAddCardPopup.addEventListener("click", () => openPopup(popupAddCard));
 
-formProfile.addEventListener("submit", formAddProfile);
+formProfile.addEventListener("submit", submitFormAddProfile);
 formAddCard.addEventListener("submit", addCard);
