@@ -46,12 +46,12 @@ const toggleButtonState = (inputList, buttonElement, settings) => {
 function turnOnbutton(buttonElement, settings) {
   buttonElement.setAttribute("disabled", true);
   buttonElement.classList.add(settings.inactiveButtonClass);
-}
+};
 
 function turnOffbutton(buttonElement, settings) {
   buttonElement.classList.remove(settings.inactiveButtonClass);
   buttonElement.removeAttribute("disabled");
-}
+};
 
 const setEventListeners = (formElement, settings) => {
   const inputList = Array.from(formElement.querySelectorAll(settings.inputSelector));
@@ -68,8 +68,11 @@ const setEventListeners = (formElement, settings) => {
 function enableValidation(settings) {
   const formList = Array.from(document.querySelectorAll(settings.formSelector));
   formList.forEach((formElement) => {
-    formElement.addEventListener("submit", setEventListeners(formElement, settings));
+    formElement.addEventListener("submit", (evt) => {
+      evt.preventDefault();
+    });
+    setEventListeners(formElement, settings);
   });
-}
+};
 
 enableValidation(objSettings);
