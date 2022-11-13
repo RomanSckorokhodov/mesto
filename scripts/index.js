@@ -1,4 +1,4 @@
-import { initialCards } from './Card.js';
+import { initialCards, objSettings } from './Cards.js';
 import { FormValidator } from './FormValidator.js';
 
 const buttonOpenEditPopup = document.querySelector(".profile__edit-button");
@@ -41,7 +41,7 @@ const addCard = (e) => {
 };
 
 
-const resetForm = (form, button, settings) => {
+  _resetForm = (form, button, settings) => {
   const inputs = Array.from(form.querySelectorAll(settings.inputSelector));
   toggleButtonState(inputs, button, settings);
 }
