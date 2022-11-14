@@ -68,7 +68,13 @@ export class FormValidator {
         });
     };
 
+    _resetForm = (form, button, settings) => {
+        const inputs = Array.from(form.querySelectorAll(settings.inputSelector));
+        this._toggleButtonState(inputs, button, settings);
+    }
+
     enableValidation = () => {
         this._setEventListeners();
+        this.__resetForm();
       };
 }
