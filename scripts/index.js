@@ -1,16 +1,11 @@
-import { initialCards, objSettings } from './Cards.js';
-import { FormValidator } from './FormValidator.js';
-import { Card } from './Card.js';
-
-
 const buttonOpenEditPopup = document.querySelector(".profile__edit-button");
 const buttonOpenAddCardPopup = document.querySelector(".profile__add-button");
 const popupAddCard = document.querySelector(".popup_add");
 const popupProfile = document.querySelector(".popup_profile");
 const popupImage = document.querySelector(".popup_image");
-// const buttonCloseEditPopup = popupProfile.querySelector(".popup__close");
-// const buttonCloseAddCardPopup = popupAddCard.querySelector(".popup__close");
-// const buttonCloseImagePopup = popupImage.querySelector(".popup__close");
+const buttonCloseEditPopup = popupProfile.querySelector(".popup__close");
+const buttonCloseAddCardPopup = popupAddCard.querySelector(".popup__close");
+const buttonCloseImagePopup = popupImage.querySelector(".popup__close");
 const formProfile = popupProfile.querySelector(".popup__editor_profile");
 const nameInput = document.querySelector(".popup__input_text_name");
 const jobInput = document.querySelector(".popup__input_text_job");
@@ -42,6 +37,12 @@ const addCard = (e) => {
   resetForm(popupAddCard, buttonSubmitAddCard, objSettings)
 };
 
+
+const resetForm = (form, button, settings) => {
+  const inputs = Array.from(form.querySelectorAll(settings.inputSelector));
+  toggleButtonState(inputs, button, settings);
+}
+
 const createCardNode = (name, link) => {
   const card = template.content.cloneNode(true);
   const cardName = card.querySelector(".element__heading");
@@ -66,22 +67,25 @@ const createCardNode = (name, link) => {
   return card;
 };
 
+/**Удаление карточек*/
 const deleteCard = (e) => {
   const cardsList = e.target.closest(".element");
   cardsList.remove();
 };
 
+/**Лайки на карточках*/
 const likeCard = (e) => {
   e.target.classList.toggle("element__like_active");
 };
 
 renderInitialCards();
 
+/**Открытие всех Поп-апов */
 function openPopup(popup) {
   popup.classList.add("popup_opened");
   document.addEventListener('keydown', closePopupByEsc);
 }
-
+/**Закрытие всех Поп-апов */
 function closePopup(popup) {
   popup.classList.remove("popup_opened");
   document.removeEventListener('keydown', closePopupByEsc);
